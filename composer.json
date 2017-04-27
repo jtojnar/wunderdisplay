@@ -1,0 +1,21 @@
+{
+    "name": "jtojnar/wunderdisplay",
+    "type": "project",
+    "require": {
+        "johnrivs/wunderlist": "^0.13.2",
+        "latte/latte": "^2.4",
+        "nette/caching": "^2.5"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jan Tojnar",
+            "email": "jtojnar@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "jtojnar\\Wunderdisplay\\": "src/"
+        }
+    }
+}
