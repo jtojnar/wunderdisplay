@@ -21,6 +21,7 @@ li {
 	margin: 0.2em 0;
 	overflow: hidden;
 	padding: 0.3em;
+	position: relative;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
@@ -33,4 +34,15 @@ li {
 	padding: 0.05em 0.3em;
 	text-decoration: none;
 	vertical-align: middle;
+}
+
+.starred::after {
+	background-color: #d74e48;
+	clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 50% 80%, 0% 100%);
+	color: white;
+	content: "★";
+	padding: 0.1em 0.1em 0.3em;
+	position: absolute;
+	right: 0.5em;
+	top: 0;
 }

@@ -11,7 +11,7 @@
 <h1>{$title}<a n:if="count($tasks) > 0" href="." class="badge">{count($tasks)}</a></h1>
 {if count($tasks) > 0}
 <ul>
-	<li n:foreach="$tasks as $task" n:if="!isset($task['completed']) || !$task['completed']" n:class="implode(' ', $task['tags'])">{$task['title']|formatTask|noescape}</li>
+	<li n:foreach="$tasks as $task" n:if="!isset($task['completed']) || !$task['completed']" n:class="implode(' ', $task['tags']), $task['starred'] ? starred">{$task['title']|formatTask|noescape}</li>
 </ul>
 {else}
 <p>There are no tasks yet.</p>
